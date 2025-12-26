@@ -11,10 +11,16 @@
     "build:hugo": "hugo --minify --gc",
     "preview": "pnpm run build && hugo server --disableLiveReload",
     "clean": "rm -rf public resources _pagefind",
-    "update-theme": "hugo mod get -u github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist@latest && hugo mod tidy"
+    "update-theme": "hugo mod get -u github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist@latest && hugo mod tidy",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:major": "standard-version --release-as major",
+    "release:patch": "standard-version --release-as patch",
+    "release:dry": "standard-version --dry-run"
   },
   "devDependencies": {
-    "pagefind": "^1.4.0"
+    "pagefind": "^1.4.0",
+    "standard-version": "^9.5.0"
   },
   "engines": {
     "node": ">=18.0.0",

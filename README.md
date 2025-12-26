@@ -149,7 +149,65 @@ pnpm update-theme     # Update theme to latest version
 
 # Search (experimental)
 pnpm pagefind         # Generate search index (requires theme support)
+
+# Version Management
+pnpm release          # Auto release (patch/minor based on commits)
+pnpm release:patch    # Release patch version (1.0.0 -> 1.0.1)
+pnpm release:minor    # Release minor version (1.0.0 -> 1.1.0)
+pnpm release:major    # Release major version (1.0.0 -> 2.0.0)
+pnpm release:dry      # Preview release without executing
 ```
+
+## Version Management
+
+This project uses automated version management based on [Conventional Commits](https://www.conventionalcommits.org/). 
+
+### Commit Message Format
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+**Types:**
+- `feat:` - New features (→ minor version)
+- `fix:` - Bug fixes (→ patch version)
+- `docs:` - Documentation changes
+- `style:` - Code style changes
+- `refactor:` - Code refactoring
+- `perf:` - Performance improvements
+- `test:` - Adding tests
+- `build:` - Build system changes
+- `ci:` - CI/CD changes
+- `chore:` - Other changes
+
+**Breaking Changes:** Add `BREAKING CHANGE:` in footer or `!` after type (→ major version)
+
+### Examples
+
+```bash
+feat: add search functionality
+fix: resolve navigation menu issue
+docs: update installation guide
+feat!: redesign configuration format
+
+BREAKING CHANGE: configuration file format changed from YAML to TOML
+```
+
+### Automatic Releases
+
+- **Push to main**: Automatically analyzes commits and creates appropriate release
+- **Manual trigger**: Use GitHub Actions "Release" workflow with version type selection
+- **Local release**: Use `pnpm release` commands
+
+All releases automatically:
+- Update version in `package.json`
+- Generate/update `CHANGELOG.md`
+- Create Git tag
+- Create GitHub Release
 
 ## Search Functionality
 

@@ -1,0 +1,75 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore(release):')"
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Generate release (auto)
+        if: github.event_name == 'push'
+        run: npm run release
+
+      - name: Generate release (manual)
+        if: github.event_name == 'workflow_dispatch'
+        run: npm run release:${{ github.event.inputs.release_type }}
+
+      - name: Push changes
+        run: |
+          git push --follow-tags origin main
+
+      - name: Create GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get the latest tag
+          LATEST_TAG=$(git describe --tags --abbrev=0)
+          
+          # Extract changelog for this version
+          CHANGELOG_CONTENT=$(sed -n "/^## \[${LATEST_TAG#v}\]/,/^## \[/p" CHANGELOG.md | sed '$d' | tail -n +2)
+          
+          # Create release
+          gh release create "$LATEST_TAG" \
+            --title "Release $LATEST_TAG" \
+            --notes "$CHANGELOG_CONTENT" \
+            --latest
