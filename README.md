@@ -2,6 +2,10 @@
 
 🚀 Quick start template for Hugo Fluid theme - A Material Design theme for Hugo inspired by hexo-theme-fluid.
 
+## Live Demo
+
+🌐 **[View Live Demo →](https://hugo-fluid.github.io)**
+
 ## Features
 
 - ✅ Pre-configured with Hugo Modules
