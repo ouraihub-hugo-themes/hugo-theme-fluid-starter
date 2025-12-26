@@ -63,3 +63,10 @@ url = "https://hugo-fluid.github.io/docs/features/"
 weight = 73
 parent = "文档"
 post = "_blank"
+
+[[main]]
+name = "下拉菜单配置"
+url = "https://hugo-fluid.github.io/docs/dropdown-menu/"
+weight = 74
+parent = "文档"
+post = "_blank"

@@ -18,7 +18,7 @@ Hugo Fluid is a Material Design style Hugo blog theme ported from hexo-theme-flu
 ### Method 1: Git Submodule
 
 ```bash
-git submodule add https://github.com/fluid-dev/hugo-theme-fluid.git themes/hugo-theme-fluid
+git submodule add https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist.git themes/hugo-theme-fluid
 ```
 
 ### Method 2: Hugo Modules
@@ -32,7 +32,7 @@ Then add to `hugo.toml`:
 ```toml
 [module]
 [[module.imports]]
-path = "github.com/fluid-dev/hugo-theme-fluid"
+path = "github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist"
 ```
 
 ## Configuration

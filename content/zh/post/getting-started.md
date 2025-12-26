@@ -18,7 +18,7 @@ Hugo Fluid 是一个基于 hexo-theme-fluid 改写的 Material Design 风格 Hug
 ### 方式一：Git Submodule
 
 ```bash
-git submodule add https://github.com/fluid-dev/hugo-theme-fluid.git themes/hugo-theme-fluid
+git submodule add https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist.git themes/hugo-theme-fluid
 ```
 
 ### 方式二：Hugo Modules
@@ -32,7 +32,7 @@ hugo mod init github.com/your-username/your-blog
 ```toml
 [module]
 [[module.imports]]
-path = "github.com/fluid-dev/hugo-theme-fluid"
+path = "github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist"
 ```
 
 ## 配置
