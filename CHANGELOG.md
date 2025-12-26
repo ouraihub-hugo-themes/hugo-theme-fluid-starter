@@ -3,6 +3,13 @@
 All notable changes to Hugo Fluid Starter project will be documented in this file.
 
 
+### [1.1.1](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/compare/v1.1.0...v1.1.1) (2025-12-26)
+
+
+### ✨ 新功能
+
+* 版本管理脚本现在自动推送到 GitHub ([0a0958a](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/0a0958a7cefe6a908d920ef51fd6421947b9668e))
+
 ## 1.1.0 (2025-12-26)
 
 

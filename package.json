@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-fluid-starter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "🚀 Quick start template for Hugo Fluid theme - A Material Design theme for Hugo inspired by hexo-theme-fluid",
   "type": "module",
   "scripts": {
