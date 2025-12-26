@@ -8,7 +8,10 @@
     "dev:debug": "hugo server --logLevel debug --disableFastRender",
     "pagefind": "pagefind --site public",
     "build": "hugo --minify --gc && pnpm run pagefind",
-    "preview": "pnpm run build && hugo server --disableLiveReload"
+    "build:hugo": "hugo --minify --gc",
+    "preview": "pnpm run build && hugo server --disableLiveReload",
+    "clean": "rm -rf public resources _pagefind",
+    "update-theme": "hugo mod get -u github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist@latest && hugo mod tidy"
   },
   "devDependencies": {
     "pagefind": "^1.4.0"

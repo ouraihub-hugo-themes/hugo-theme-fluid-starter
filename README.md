@@ -138,12 +138,22 @@ pnpm dev              # Start development server
 pnpm dev:debug        # Start with debug logging
 
 # Building
-pnpm build            # Build for production
+pnpm build            # Build for production (Hugo only)
+pnpm build:with-search # Build with Pagefind search (when theme supports it)
+pnpm build:hugo       # Build Hugo only (alias for build)
 pnpm preview          # Preview production build
 
-# Search
-pnpm pagefind         # Generate search index
+# Maintenance
+pnpm clean            # Clean build artifacts
+pnpm update-theme     # Update theme to latest version
+
+# Search (experimental)
+pnpm pagefind         # Generate search index (requires theme support)
 ```
+
+## Search Functionality
+
+The Hugo Fluid theme includes built-in search functionality. External search indexing with Pagefind is currently disabled until the theme templates are updated to support it. The theme's native search should work out of the box.
 
 ## Updating Theme
 
