@@ -151,11 +151,13 @@ pnpm update-theme     # Update theme to latest version
 pnpm pagefind         # Generate search index (requires theme support)
 
 # Version Management
-pnpm release          # Auto release (patch/minor based on commits)
-pnpm release:patch    # Release patch version (1.0.0 -> 1.0.1)
-pnpm release:minor    # Release minor version (1.0.0 -> 1.1.0)
-pnpm release:major    # Release major version (1.0.0 -> 2.0.0)
+pnpm release          # Auto release + push to GitHub
+pnpm release:patch    # Release patch version + push (1.0.0 -> 1.0.1)
+pnpm release:minor    # Release minor version + push (1.0.0 -> 1.1.0)
+pnpm release:major    # Release major version + push (1.0.0 -> 2.0.0)
 pnpm release:dry      # Preview release without executing
+pnpm release:local    # Local release only (no push)
+pnpm release:push     # Push existing tags to GitHub
 ```
 
 ## Version Management
@@ -201,13 +203,30 @@ BREAKING CHANGE: configuration file format changed from YAML to TOML
 
 - **Push to main**: Automatically analyzes commits and creates appropriate release
 - **Manual trigger**: Use GitHub Actions "Release" workflow with version type selection
-- **Local release**: Use `pnpm release` commands
+- **Local release**: Use `pnpm release` commands (now includes automatic push)
+
+**New workflow:**
+```bash
+# One command does everything: version, changelog, tag, and push
+pnpm release
+
+# Or specify version type
+pnpm release:minor
+pnpm release:major
+
+# For testing only (no actual release)
+pnpm release:dry
+
+# If you want local-only release (advanced users)
+pnpm release:local
+```
 
 All releases automatically:
 - Update version in `package.json`
 - Generate/update `CHANGELOG.md`
 - Create Git tag
-- Create GitHub Release
+- **Push to GitHub** (new!)
+- Trigger GitHub Actions to create GitHub Release
 
 ## Search Functionality
 

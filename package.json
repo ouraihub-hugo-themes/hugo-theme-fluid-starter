@@ -12,11 +12,13 @@
     "preview": "pnpm run build && hugo server --disableLiveReload",
     "clean": "rm -rf public resources _pagefind",
     "update-theme": "hugo mod get -u github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist@latest && hugo mod tidy",
-    "release": "standard-version",
-    "release:minor": "standard-version --release-as minor",
-    "release:major": "standard-version --release-as major",
-    "release:patch": "standard-version --release-as patch",
-    "release:dry": "standard-version --dry-run"
+    "release": "standard-version && git push --follow-tags origin main",
+    "release:minor": "standard-version --release-as minor && git push --follow-tags origin main",
+    "release:major": "standard-version --release-as major && git push --follow-tags origin main",
+    "release:patch": "standard-version --release-as patch && git push --follow-tags origin main",
+    "release:dry": "standard-version --dry-run",
+    "release:local": "standard-version",
+    "release:push": "git push --follow-tags origin main"
   },
   "devDependencies": {
     "pagefind": "^1.4.0",
