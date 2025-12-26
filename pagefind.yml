@@ -24,19 +24,22 @@ exclude_selectors:
   - ".category-bar"
 
 # 强制包含的语言
-force_language: "zh"
+# force_language: "zh"
 
 # 多语言支持
-languages:
-  - code: "zh"
-    name: "中文"
-  - code: "en" 
-    name: "English"
-  - code: "tw"
-    name: "繁體中文"
+# languages:
+#   - code: "zh"
+#     name: "中文"
+#   - code: "en" 
+#     name: "English"
+#   - code: "tw"
+#     name: "繁體中文"
 
 # 自定义记录选择器
-root_selector: "main, article, .content"
+# root_selector: "main, article, .content"
 
 # 摘要长度
 excerpt_length: 30
+
+# 如果没有找到 data-pagefind-body，索引整个 body
+keep_index_url: true

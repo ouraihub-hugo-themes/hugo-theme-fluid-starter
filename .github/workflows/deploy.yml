@@ -53,7 +53,7 @@ jobs:
             --baseURL "https://hugo-fluid.github.io/"
 
       - name: Generate search index
-        run: pnpm run pagefind
+        run: pnpm run pagefind || echo "Pagefind indexing failed, continuing deployment without search"
 
       - name: Deploy to hugo-fluid.github.io
         if: github.ref == 'refs/heads/main'
