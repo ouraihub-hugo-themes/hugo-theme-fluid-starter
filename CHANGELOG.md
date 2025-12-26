@@ -3,6 +3,8 @@
 All notable changes to Hugo Fluid Starter project will be documented in this file.
 
 
+### [1.1.2](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/compare/v1.1.1...v1.1.2) (2025-12-26)
+
 ### [1.1.1](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/compare/v1.1.0...v1.1.1) (2025-12-26)
 
 
