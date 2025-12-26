@@ -33,3 +33,33 @@ name = "關於"
 url = "/about/"
 weight = 6
 pre = "iconfont icon-user-fill"
+
+# 文檔下拉選單
+[[main]]
+name = "文檔"
+url = "https://hugo-fluid.github.io/tw/docs/"
+weight = 7
+pre = "iconfont icon-books"
+post = "_blank"
+hasChildren = true
+
+[[main]]
+name = "快速開始"
+url = "https://hugo-fluid.github.io/tw/docs/"
+weight = 71
+parent = "文檔"
+post = "_blank"
+
+[[main]]
+name = "配置指南"
+url = "https://hugo-fluid.github.io/tw/docs/config/"
+weight = 72
+parent = "文檔"
+post = "_blank"
+
+[[main]]
+name = "主題特性"
+url = "https://hugo-fluid.github.io/tw/docs/features/"
+weight = 73
+parent = "文檔"
+post = "_blank"
