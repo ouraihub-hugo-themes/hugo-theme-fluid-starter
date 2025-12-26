@@ -1,0 +1,6 @@
+# Hugo Theme Fluid - 繁體中文語言特定配置
+
+# 首頁配置
+[index.slogan]
+enable = true
+text = "一個優雅的 Material-Design 風格 Hugo 主題"

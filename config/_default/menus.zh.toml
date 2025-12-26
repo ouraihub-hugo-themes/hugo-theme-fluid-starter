@@ -1,0 +1,35 @@
+[[main]]
+name = "首页"
+url = "/"
+weight = 1
+pre = "iconfont icon-home-fill"
+
+[[main]]
+name = "归档"
+url = "/archives/"
+weight = 2
+pre = "iconfont icon-archive-fill"
+
+[[main]]
+name = "分类"
+url = "/categories/"
+weight = 3
+pre = "iconfont icon-category-fill"
+
+[[main]]
+name = "标签"
+url = "/tags/"
+weight = 4
+pre = "iconfont icon-tags-fill"
+
+[[main]]
+name = "友链"
+url = "/links/"
+weight = 5
+pre = "iconfont icon-link-fill"
+
+[[main]]
+name = "关于"
+url = "/about/"
+weight = 6
+pre = "iconfont icon-user-fill"

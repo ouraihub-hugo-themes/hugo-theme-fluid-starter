@@ -1,0 +1,35 @@
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+pre = "iconfont icon-home-fill"
+
+[[main]]
+name = "Archives"
+url = "/archives/"
+weight = 2
+pre = "iconfont icon-archive-fill"
+
+[[main]]
+name = "Categories"
+url = "/categories/"
+weight = 3
+pre = "iconfont icon-category-fill"
+
+[[main]]
+name = "Tags"
+url = "/tags/"
+weight = 4
+pre = "iconfont icon-tags-fill"
+
+[[main]]
+name = "Links"
+url = "/links/"
+weight = 5
+pre = "iconfont icon-link-fill"
+
+[[main]]
+name = "About"
+url = "/about/"
+weight = 6
+pre = "iconfont icon-user-fill"

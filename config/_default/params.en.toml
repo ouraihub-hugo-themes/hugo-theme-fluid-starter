@@ -1,0 +1,6 @@
+# Hugo Theme Fluid - English language specific configuration
+
+# Home page configuration
+[index.slogan]
+enable = true
+text = "An elegant Material-Design theme for Hugo"

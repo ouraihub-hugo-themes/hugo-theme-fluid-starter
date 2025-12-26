@@ -1,0 +1,36 @@
+{
+  "name": "hugo-theme-fluid-starter",
+  "version": "1.0.0",
+  "description": "🚀 Quick start template for Hugo Fluid theme - A Material Design theme for Hugo inspired by hexo-theme-fluid",
+  "type": "module",
+  "scripts": {
+    "dev": "hugo server",
+    "dev:debug": "hugo server --logLevel debug --disableFastRender",
+    "pagefind": "pagefind --site public",
+    "build": "hugo --minify --gc && pnpm run pagefind",
+    "preview": "pnpm run build && hugo server --disableLiveReload"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0",
+    "hugo": ">=0.120.0"
+  },
+  "packageManager": "pnpm@10.25.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme",
+    "fluid",
+    "blog",
+    "starter",
+    "material-design"
+  ],
+  "author": "Fluid Dev Team",
+  "license": "MIT"
+}

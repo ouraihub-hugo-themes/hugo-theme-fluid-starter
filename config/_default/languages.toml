@@ -1,0 +1,22 @@
+# Hugo Theme Fluid - Languages Configuration
+
+[zh]
+languageCode = "zh-CN"
+languageName = "简体中文"
+weight = 1
+title = "Hugo Fluid 博客"
+contentDir = "content/zh"
+
+[en]
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "Hugo Fluid Blog"
+contentDir = "content/en"
+
+[tw]
+languageCode = "zh-TW"
+languageName = "繁體中文"
+weight = 3
+title = "Hugo Fluid 部落格"
+contentDir = "content/tw"

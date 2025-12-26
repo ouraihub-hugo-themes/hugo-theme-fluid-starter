@@ -1,0 +1,60 @@
+# Hugo Theme Fluid - Example Site Configuration
+
+baseURL = "https://example.com/"
+title = "Fluid Blog"
+
+# Hugo 模块配置
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.120.0"
+  [[module.imports]]
+    path = "github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist"
+
+# 默认语言
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+
+# CJK 语言支持
+hasCJKLanguage = true
+
+# 内联短代码
+enableInlineShortcodes = true
+
+# Emoji 支持
+enableEmoji = true
+
+# 摘要长度
+summaryLength = 200
+
+# 输出格式
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
+# Markdown 渲染配置
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = false
+noClasses = false
+style = "github"
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
+
+# 分类系统
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# 分页
+[pagination]
+pagerSize = 5
