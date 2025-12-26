@@ -2,20 +2,26 @@
 
 All notable changes to Hugo Fluid Starter project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## 1.1.0 (2025-12-26)
 
-### Added
-- 添加文档示例和下拉菜单配置指南
-- 同步主题项目的文档示例到 starter 项目
-- 添加下拉菜单配置指南（中文/英文/繁体中文）
-- 更新菜单配置，添加下拉菜单配置指南链接
-- 提供完整的文档示例供用户参考
 
-### Changed
-- 更新所有 GitHub 仓库地址为发布版地址 `github.com/ouraihub-hugo-themes/hugo-theme-fluid-dist`
+### 🔧 其他
+
+* 更新主题版本，同步 Pagefind 搜索功能修复 ([a799cad](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/a799cadebb6b0e36a14d59791dd15676318b5869))
+* 同步主题最新修复，完善 Pagefind 搜索功能 ([306f443](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/306f44325d87ef07f7caf8a9868aa7adf55a4fcd))
+
+
+### 📝 文档
+
+* 添加 CHANGELOG.md 版本管理文件 ([0305926](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/03059260b78559c58135fc50a1f7ca00e771b56e))
+
+
+### ✨ 新功能
+
+* 添加文档菜单链接 ([a67aab9](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/a67aab98f4b14065032620e3c5f7003ff97b72b1))
+* 添加文档示例和下拉菜单配置指南 ([92563d6](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/92563d65f374f68f4b6665888afb3ec6ee7c4b06))
+* 完善版本管理系统 ([90548ec](https://github.com/ouraihub-hugo-themes/hugo-theme-fluid-starter/commit/90548ece3d45dcc494fa8095a7043aadc9bc3c81))
 
 ## [1.0.0] - 2025-12-25
 
