@@ -1,72 +1,67 @@
 [[main]]
 name = "首頁"
-url = "/"
+url = "/tw/"
 weight = 1
 pre = "iconfont icon-home-fill"
 
 [[main]]
 name = "歸檔"
-url = "/archives/"
+url = "/tw/archives/"
 weight = 2
 pre = "iconfont icon-archive-fill"
 
 [[main]]
 name = "分類"
-url = "/categories/"
+url = "/tw/categories/"
 weight = 3
 pre = "iconfont icon-category-fill"
 
 [[main]]
 name = "標籤"
-url = "/tags/"
+url = "/tw/tags/"
 weight = 4
 pre = "iconfont icon-tags-fill"
 
 [[main]]
 name = "友鏈"
-url = "/links/"
+url = "/tw/links/"
 weight = 5
 pre = "iconfont icon-link-fill"
 
 [[main]]
 name = "關於"
-url = "/about/"
+url = "/tw/about/"
 weight = 6
 pre = "iconfont icon-user-fill"
 
 # 文檔下拉選單
 [[main]]
 name = "文檔"
-url = "https://hugo-fluid.github.io/tw/docs/"
+url = "/tw/docs/"
 weight = 7
 pre = "iconfont icon-books"
-post = "_blank"
 hasChildren = true
 
 [[main]]
 name = "快速開始"
-url = "https://hugo-fluid.github.io/tw/docs/"
+url = "/tw/docs/"
 weight = 71
 parent = "文檔"
-post = "_blank"
 
 [[main]]
 name = "配置指南"
-url = "https://hugo-fluid.github.io/tw/docs/config/"
+url = "/tw/docs/config/"
 weight = 72
 parent = "文檔"
-post = "_blank"
 
 [[main]]
 name = "主題特性"
-url = "https://hugo-fluid.github.io/tw/docs/features/"
+url = "/tw/docs/features/"
 weight = 73
 parent = "文檔"
-post = "_blank"
 
 [[main]]
 name = "下拉選單配置"
-url = "https://hugo-fluid.github.io/tw/docs/dropdown-menu/"
+url = "/tw/docs/dropdown-menu/"
 weight = 74
 parent = "文檔"
-post = "_blank"

@@ -37,36 +37,31 @@ pre = "iconfont icon-user-fill"
 # Documentation dropdown menu
 [[main]]
 name = "Docs"
-url = "https://hugo-fluid.github.io/en/docs/"
+url = "/docs/"
 weight = 7
 pre = "iconfont icon-books"
-post = "_blank"
 hasChildren = true
 
 [[main]]
 name = "Quick Start"
-url = "https://hugo-fluid.github.io/en/docs/"
+url = "/docs/"
 weight = 71
 parent = "Docs"
-post = "_blank"
 
 [[main]]
 name = "Configuration"
-url = "https://hugo-fluid.github.io/en/docs/config/"
+url = "/docs/config/"
 weight = 72
 parent = "Docs"
-post = "_blank"
 
 [[main]]
 name = "Features"
-url = "https://hugo-fluid.github.io/en/docs/features/"
+url = "/docs/features/"
 weight = 73
 parent = "Docs"
-post = "_blank"
 
 [[main]]
 name = "Dropdown Menu Config"
-url = "https://hugo-fluid.github.io/en/docs/dropdown-menu/"
+url = "/docs/dropdown-menu/"
 weight = 74
 parent = "Docs"
-post = "_blank"

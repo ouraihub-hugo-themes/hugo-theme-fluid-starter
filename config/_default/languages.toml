@@ -1,4 +1,5 @@
 # Hugo Theme Fluid - Languages Configuration
+# 注意：Hugo 按字母顺序处理语言，但 defaultContentLanguage 决定哪个语言在根目录
 
 [zh]
 languageCode = "zh-CN"
