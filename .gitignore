@@ -32,8 +32,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Package managers
-pnpm-lock.yaml
+# Package managers (keep pnpm-lock.yaml for CI/CD)
 yarn.lock
 package-lock.json
 
