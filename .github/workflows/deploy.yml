@@ -37,10 +37,19 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Install Node.js dependencies
-        run: |
-          npm install -g pnpm
-          pnpm install
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build with Hugo
         env:
@@ -59,26 +68,18 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # 使用 Personal Access Token 推送到另一个仓库
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
-          # 目标仓库
           external_repository: hugo-fluid/hugo-fluid.github.io
-          # 推送到 main 分支
           publish_branch: main
-          # 构建输出目录
           publish_dir: ./public
-          # 提交信息
           commit_message: |
             Deploy from hugo-theme-fluid-starter
             
             Source: ${{ github.repository }}@${{ github.sha }}
             Commit: ${{ github.event.head_commit.message }}
-          # 保持 .git 历史
           keep_files: false
-          # 用户信息
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
 
-# 只需要读取权限
 permissions:
   contents: read
